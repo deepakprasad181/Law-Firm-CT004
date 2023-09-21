@@ -1,0 +1,471 @@
+/* ---------------------------- *\
+
+    # Typography #
+
+\* ---------------------------- */
+
+body, 
+html {
+  font-family: $bodyText;
+}
+
+h1, h2, h3, h4, h5, h6, a {
+  font-family: $headerText;
+}
+
+
+
+h1, h5, h6, a {
+  font-weight: 700;
+  text-transform: uppercase;
+  color: $colorWhite;
+}
+
+h2, h3, h4 {
+  font-weight: 400;
+}
+
+.company-name {
+  font-size: em(23px);
+  text-transform: none;
+  letter-spacing: 0.36px;
+
+  @include at-query($three) {
+    font-size: em(21px);
+  }
+
+  @include at-query($four) {
+    font-size: em(23px);
+  }
+}
+
+.nav-button {
+  letter-spacing: 0.25px;
+  opacity: 0.8;
+  font-size: em(15px);
+
+  &:hover {
+    opacity: 1;
+  }
+
+  @include at-query ($one) {
+    font-size: em(16px);
+  }
+
+  @include at-query ($three) {
+    font-size: em(17px);
+    opacity: 1;
+
+      &:hover {
+      opacity: 0.85;
+    }
+  }
+
+  @include at-query (750px) {
+    font-size: em(18px);
+  }
+}
+
+.motto {
+  font-size: em(41px);
+  letter-spacing: 3.08px;
+  line-height: 60px;
+  margin-bottom: 0px;
+
+  @include at-query ($two) {
+    font-size: em(52px);
+    letter-spacing: 4.34px;
+    line-height: 70px;
+  }
+}
+
+.description {
+  font-weight: 400;
+  font-style: italic;
+  font-size: em(18px);
+  letter-spacing: 0.07px;
+  line-height: 25px;
+  color: #E5E5E5;
+  max-width: 460px;
+  
+  @include at-query ($two) {
+    padding-right: 80px;
+  }
+
+  @include at-query ($three) {
+    font-size: em(20px);
+    letter-spacing: 0.09px;
+    padding: 0px 40px 0px 0px;
+  }
+}
+
+.contact-text {
+  font-size: em(15px);
+  text-transform: uppercase;
+  text-align: center;
+  color: $colorWhite;
+  font-weight: 700;
+  letter-spacing: 0.7px;
+
+  @include at-query ($two) {
+    font-size: em(16px);
+  }
+}
+
+.title {
+  font-size: em(36px);
+  letter-spacing: 0.13px;
+  text-align: center;
+  line-height: 48px;
+
+  @include at-query($two) {
+    font-size: em(42px);
+    letter-spacing: 0.18px;
+  }
+}
+
+.content{
+  text-transform: uppercase;
+  font-size: em(16px);
+  letter-spacing: 0.07px;
+  line-height: 20px;
+
+  @include at-query(696px) {
+    font-size: em(18px);
+    letter-spacing: 0.09px;
+  }
+
+  @include at-query(900px) {
+    font-size: em(20px);
+  }
+}
+
+.white {
+  color: $colorWhite;
+}
+
+.dark {
+  color: $colorBlack;
+}
+
+.mobile-white {
+  color: $colorWhite;
+
+  @include at-query($three) {
+    color: $colorBlack;
+  }
+}
+
+.mobile-dark {
+  color: $colorBlack;
+
+  @include at-query($three) {
+    color: $colorWhite;
+  }
+}
+
+.testimonial {
+  
+  .occupation {
+  font-size: em(18px);
+  opacity: 0.70;
+  letter-spacing: 1.07px;
+  margin-top: 0px;
+  margin-bottom: 2px;
+  }
+
+  .client-name {
+  font-size: em(20px);
+  font-weight: 400;
+  letter-spacing: 2.09px;
+  margin-top: 0px; 
+  margin-bottom: 16px;
+  }
+
+  .heading-line-2 {
+    margin-top: 15px;
+  }
+ 
+   .comment {
+  font-size: em(20px);
+  letter-spacing: 0.08px; 
+  line-height: 30px;
+  margin-bottom: -10px;
+  }
+}
+
+.phrase {
+  font-family: $headerText;
+  /* Now that you’ve foun: */
+  font-size: em(24px);
+  letter-spacing: 0.04px;
+  line-height: 44px;
+  margin: 0px 6%;
+  text-align: center;
+}
+
+.contact-block {
+  font-size: em(20px);
+  color: $colorWhite;
+  letter-spacing: 0.08px;
+  line-height: 26px;
+  margin-top: 25px;
+  padding: 0 40px;
+}
+
+.capitalize {
+  font-weight: 400;
+}
+
+.protection-content {
+  color: $colorWhite;
+  font-size: em(18px);
+  letter-spacing: 0.69px;
+  margin: 5px 0;
+}
+
+/* ------------------------- *\
+
+    # Gaming Law Page #
+
+\* ------------------------- */
+
+.toggle-description {
+  font-family: $headerText;
+  font-weight: 700;
+  font-size: em(16px);
+  text-transform: uppercase;
+  letter-spacing: 0.08px;
+  line-height: 20px;
+  color: $colorWhite;
+  padding: 0px 0px 0px 10px;
+  margin: 1px 0px 0px 0px;
+
+  @include at-query($one) {
+    font-size: em(18px);
+    line-height: 22px;
+  }
+}
+
+.dropcap {
+    float: left;
+    font-family: $bodyText;
+    font-size: em(52px);
+    line-height: 60px;
+    color: $colorBlack;
+    padding-right: 10px;
+    margin: 7px 0px -3px 0px;
+  }
+
+/* -------------------------------- *\
+
+    # Profile Page - Mac the #
+
+\* -------------------------------- */
+
+.profile-title {
+  font-size: em(36px);
+  letter-spacing: 1.18px;
+  text-align: center;
+  text-transform: uppercase;
+  line-height: 48px;
+  margin: 0 auto;
+
+  @include at-query($two) {
+    font-size: em(42px);
+  }
+}
+
+.headline, .eline-1, .eline-2 {
+  text-align: center;
+
+  @include at-query($two) {
+    text-align: left;
+  }  
+}
+
+.headline {
+  font-size: em(20px);
+  font-weight: 400;
+  letter-spacing: 1.88px;
+  margin-top: 0px; 
+  margin-bottom: 16px;
+  text-transform: uppercase;
+  color: $colorBlack;
+  }
+
+.eline-1 {
+  font-size: em(18px);
+  font-weight: 400;
+  letter-spacing: 0.08;
+  margin: 16px 0px 0px 0px;
+  text-transform: uppercase;
+}
+
+.eline-2 {
+  font-size: em(18px);
+  margin: 3px 0px -6px 0px; 
+  font-style: italic;
+}
+
+.extra-awards {
+  margin: 16px 0px 0px 0px;
+
+  @include at-query($two){
+    margin: 13px 0px 0px 0px;
+  }
+}
+
+.admission-box {
+  text-align: center;
+
+  @include at-query($two) {
+    text-align: left;
+  }
+}
+
+.admission-box-center {
+  text-align: center;
+}
+
+.admission-box, .admission-box-center {
+  li {
+    font-family: $bodyText;
+    font-style: italic;
+    letter-spacing: 0.08px;
+    font-size: em(20px);
+    line-height: 28px;
+    margin-bottom: 25px;
+    list-style-type: none;
+  }
+}
+
+/* ------------------------- *\
+
+    # Insights Page #
+
+\* ------------------------- */
+
+.insights-description {
+  font-weight: 400;
+  font-style: italic;
+  font-size: em(18px);
+  letter-spacing: 0.07px;
+  line-height: 25px;
+  color: #E5E5E5;
+  max-width: 460px;
+  margin-top: 17px;
+  margin-bottom: 0px;
+  
+  @include at-query (500px) {
+    padding-right: 80px;
+  }
+
+  @include at-query ($three) {
+    font-size: em(20px);
+    letter-spacing: 0.09px;
+    padding: 0px 40px 0px 0px;
+  }
+}
+
+.post-title, .post-date, .post-content, .read-more-color {
+  color: $colorBlack;
+}
+
+.post-title {
+  font-size: em(30px);
+  letter-spacing: 0.12px;
+  line-height: 33px;
+  margin-top: 0px;
+  margin-bottom: 0px;
+}
+
+.post-date {
+  opacity: 0.8;
+  font-size: em(17px);
+  letter-spacing: 0.14px;
+  margin-top: 8px;
+  margin-bottom: 0px;
+}
+
+.post-content {
+  font-size: em(20px);
+  letter-spacing: 0.16px;
+  line-height: 26px;
+  margin-top: 18px;
+  margin-bottom: 0px;
+}
+
+.read-more-color {
+  font-weight: 400;
+}
+
+/* ------------------------- *\
+
+    # About Page #
+
+\* ------------------------- */
+
+.at-about-page-title {
+  margin: 2px auto 30px;
+}
+
+.position-title {
+  opacity: 0.7;
+  font-style: italic;
+  font-size: em(18px);
+  color: #000000;
+  letter-spacing: 1.07px;
+  margin-top: 25px;
+  margin-bottom: 0px;
+}
+
+.employee-name {
+  font-size: em(20px);
+  color: #000000;
+  letter-spacing: 1.09px;
+  font-weight: 400;
+  text-transform: none;
+  margin-top: 5px;
+  margin-bottom: 15px;
+}
+
+.contact-clues {
+  li {
+    font-family: $bodyText;
+    font-size: em(20px);
+    letter-spacing: 0.08px;
+    color: $colorBlack;
+    opacity: 0.7;
+    line-height: 30px;
+  }
+}
+
+.read-profile {
+  font-weight: 400;
+  font-size: em(18px);
+  color: #000000;
+  letter-spacing: 3.08px;
+  text-transform: uppercase;
+  margin-top: 39px;
+  margin-bottom: 0px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
